@@ -31,6 +31,10 @@ spec:
             addonsConfig:
               gcePersistentDiskCsiDriverConfig:
                 enabled: true
+            masterAuth:
+              username: multik8sadmin
+            masterAuthorizedNetworksConfig:
+              enabled: false
       patches:
         - fromFieldPath: metadata.uid
           toFieldPath: spec.writeConnectionSecretToRef.name
