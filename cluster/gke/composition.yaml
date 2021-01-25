@@ -16,7 +16,7 @@ spec:
         spec:
           forProvider:
             initialClusterVersion: "1.16"
-            location: us-west2
+            location: europe-west3
             ipAllocationPolicy:
               useIpAliases: true
               clusterSecondaryRangeName: pods
@@ -60,7 +60,7 @@ spec:
         kind: NodePool
         spec:
           forProvider:
-            location: us-west2
+            location: europe-west3
             initialNodeCount: 1
             clusterSelector:
               # Attach this node pool to the GKECluster created above.
